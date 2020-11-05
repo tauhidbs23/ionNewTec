@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  minDate:string = new Date().toISOString();
+  maxDate: any = (new Date()).getFullYear()+3;
+  
 
   constructor() {}
 

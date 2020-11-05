@@ -7,14 +7,14 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<!-- <ion-item>
+  <ion-label>Disabled</ion-label>
+  <ion-datetime id="dynamicDisabled" displayFormat="MM DD YY" disabled value="1994-12-15"></ion-datetime>
+</ion-item> -->
+<ion-item>
+  <ion-datetime displayFormat="DD MMM YYYY" [min]="minDate" [max]="maxDate"></ion-datetime>
+
+</ion-item>
+
 </ion-content>
