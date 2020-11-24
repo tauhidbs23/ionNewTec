@@ -14,7 +14,17 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <form [formGroup]="userAddressValidations">
+      <ion-input formControlName="mobile"></ion-input>
+      <!-- <input formControlName="mobile"> -->
+      <div *ngIf="userAddressValidations.get('mobile').hasError('required')">
+        mobile is Required!
+      </div>
+    
+      <div *ngIf="userAddressValidations.get('mobile').hasError('pattern')">
+        Invalid Phone number
+      </div>
+    </form>
+
   </div>
 </ion-content>
