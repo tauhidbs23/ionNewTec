@@ -1,5 +1,7 @@
 {
   "name": "ionnewtec",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
